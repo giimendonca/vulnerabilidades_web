@@ -3,10 +3,6 @@ include "../../includes/conexao.php";
 
 session_start();
 
-if(!isset($_SESSION['id'])){
-    die("Acesso negado.");
-}
-
 $titulo = $_POST['titulo'];
 $descricao = $_POST['descricao'];
 

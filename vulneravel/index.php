@@ -1,9 +1,6 @@
 <?php 
 include "../includes/header.php";
 
-if(!isset($_SESSION['id'])){
-    die("Acesso negado.");
-}
 ?>
 
 <section class="hero">

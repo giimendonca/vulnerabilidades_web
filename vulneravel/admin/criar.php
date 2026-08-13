@@ -1,11 +1,6 @@
 <?php
 
 include "../../includes/header.php";
-
-if(!isset($_SESSION['id'])){
-    die("Acesso negado.");
-}
-
 ?>
 
 <section class="form-container">
@@ -26,8 +21,7 @@ if(!isset($_SESSION['id'])){
                 type="text"
                 id="titulo"
                 name="titulo"
-                required
-            >
+                required>
 
         </div>
 
@@ -41,8 +35,20 @@ if(!isset($_SESSION['id'])){
                 id="descricao"
                 name="descricao"
                 rows="5"
-                required
-            ></textarea>
+                required></textarea>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="imagem">
+                Imagem da enquete
+            </label>
+
+            <input
+                type="file"
+                id="imagem"
+                name="imagem">
 
         </div>
 
@@ -56,8 +62,7 @@ if(!isset($_SESSION['id'])){
                 type="text"
                 id="opcao1"
                 name="opcoes[]"
-                required
-            >
+                required>
 
         </div>
 
@@ -71,8 +76,7 @@ if(!isset($_SESSION['id'])){
                 type="text"
                 id="opcao2"
                 name="opcoes[]"
-                required
-            >
+                required>
 
         </div>
 
@@ -86,8 +90,7 @@ if(!isset($_SESSION['id'])){
                 type="text"
                 id="opcao3"
                 name="opcoes[]"
-                required
-            >
+                required>
 
         </div>
 
