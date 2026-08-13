@@ -5,6 +5,10 @@ include "../includes/conexao.php";
 $enquetes = $conexao->query("
     SELECT * FROM enquetes
 ");
+
+if(!isset($_SESSION['id'])){
+    die("Acesso negado.");
+}
 ?>
 
 <section>

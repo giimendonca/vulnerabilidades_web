@@ -66,6 +66,8 @@ $count = 1;
                 <label for="opcao1">
                     Opção <?= $count ?>
                 </label>
+                
+                <input type="hidden" name="opcao_ids[]" value="<?= $opcao['id'] ?>">
 
                 <input
                     type="text"

@@ -3,6 +3,10 @@
 include "../includes/header.php";
 include "../includes/conexao.php";
 
+if(!isset($_SESSION['id'])){
+    die("Acesso negado.");
+}
+
 $id =  $_GET['id'];
 
 $enquete = $conexao->query("SELECT * FROM enquetes WHERE id = $id");
