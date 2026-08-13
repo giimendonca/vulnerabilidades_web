@@ -60,4 +60,4 @@ INSERT INTO opcoes (enquete_id, texto) VALUES
 (2, 'Banco de Dados'),
 (2, 'Segurança da Informação');
 
-INSERT INTO usuarios (nome, email, senha, tipo) VALUES ('Admin vulnerável', 'adminV@gmail.com', '123456', 'admin');
+INSERT INTO usuarios (nome, email, senha, tipo) VALUES ('Admin vulnerável', 'adminV@gmail.com', '123456', 'admin'), ('Admin seguro', 'adminS@gmail.com', '$2y$10$RpSI4ocCJ1BP0Yzyo.rrc.CyJjx3JBy/JngC8f9Q/sadfjxoyjD3C', 'admin');
