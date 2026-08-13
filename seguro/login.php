@@ -2,9 +2,9 @@
 
 session_start();
 
-include "../includes/csrf.php";
+include "includes/csrf.php";
 include "../includes/header.php";
-include "../includes/security.php";
+include "includes/security.php";
 
 ?>
 

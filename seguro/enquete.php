@@ -1,12 +1,12 @@
 <?php
 
-session_start();
-
-include "../includes/autenticacao.php";
-include "../includes/csrf.php";
-include "../includes/sessao.php";
+include "includes/autenticacao.php";
+include "includes/csrf.php";
+include "includes/sessao.php";
 include "../includes/header.php";
 include "../includes/conexao.php";
+include "/includes/security.php";
+
 
 $id = filter_input(
     INPUT_GET,

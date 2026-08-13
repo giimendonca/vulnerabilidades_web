@@ -1,8 +1,9 @@
 <?php
 
-include "../includes/sessao.php";
+include "./includes/sessao.php";
 include "../includes/conexao.php";
 include "../includes/header.php";
+include "/includes/security.php";
 
 
 if (!isset($_SESSION['id'])) {

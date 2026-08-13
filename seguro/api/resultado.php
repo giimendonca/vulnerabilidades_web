@@ -5,7 +5,7 @@ session_start();
 header("Content-Type: application/json; charset=UTF-8");
 
 include "../../includes/conexao.php";
-include "../../includes/security.php";
+include "../includes/security.php";
 
 if (!isset($_SESSION['id'])) {
 

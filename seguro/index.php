@@ -1,7 +1,7 @@
 <?php 
 include "includes/sessao.php";
 include "../includes/header.php";
-include "../includes/security.php";
+include "includes/security.php";
 
 if(!isset($_SESSION['id'])){
     die("Acesso negado.");

@@ -1,9 +1,11 @@
 <?php
 session_start();
 
-include "../includes/csrf.php";
-include "../../includes/conexao.php";
-include "../includes/rate_limit.php";
+include "./includes/csrf.php";
+include "../includes/conexao.php";
+include "./includes/rate_limit.php";
+include "/includes/security.php";
+
 
 verificarTentativasLogin();
 
@@ -41,6 +43,7 @@ session_regenerate_id(true);
 $_SESSION['id'] = $usuario['id'];
 $_SESSION['nome'] = $usuario['nome'];
 $_SESSION['email'] = $usuario['email'];
+$_SESSION['tipo'] = $usuario['tipo'];
 
 header("Location: index.php");
 exit();

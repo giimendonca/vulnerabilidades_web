@@ -3,7 +3,9 @@
 session_start();
 
 include "../includes/conexao.php";
-include "../includes/csrf.php";
+include "./includes/csrf.php";
+include "/includes/security.php";
+
 
 verificarTokenCSRF();
 

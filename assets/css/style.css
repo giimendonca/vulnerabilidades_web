@@ -138,3 +138,23 @@ button:hover,
     background-color: #eee;
     border-radius: 5px;
 }
+
+.enquete-acoes {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+.enquete-acoes form {
+    margin: 0;
+}
+
+.enquete-acoes .btn,
+.enquete-acoes button {
+    display: inline-block;
+}
+
+.btn-excluir {
+    background-color: #d32f2f;
+}

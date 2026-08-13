@@ -1,6 +1,7 @@
 <?php
 
-include "../includes/sessao.php";
+include "./includes/sessao.php";
+include "./includes/security.php";
 include "../includes/conexao.php";
 include "../includes/header.php";
 

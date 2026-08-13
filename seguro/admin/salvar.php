@@ -255,7 +255,7 @@ try {
 
     if ($imagem !== null) {
 
-        $arquivo = "../../assets/uploads/" . $imagem;
+        $arquivo = "vulnerabilidades_web/assets/uploads/" . $imagem;
 
         if (file_exists($arquivo)) {
             unlink($arquivo);
