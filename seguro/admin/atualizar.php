@@ -1,13 +1,11 @@
 <?php
 
-session_start();
-
 include "../../includes/conexao.php";
-include "../../includes/csrf.php";
-include "../../includes/autenticacao.php";
-include "../../includes/autorizacao.php";
-include "../../includes/security.php";
-include "../../includes/sessao.php";
+include "../includes/csrf.php";
+include "../includes/autenticacao.php";
+include "../includes/autorizacao.php";
+include "../includes/security.php";
+include "../includes/sessao.php";
 
 if (!isset($_SESSION['id'])) {
     die("Acesso negado.");

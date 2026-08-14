@@ -3,9 +3,9 @@
 if (session_status() === PHP_SESSION_NONE) {
 
     session_set_cookie_params([
-        'httponly' => true,
-        'secure' => false,
-        'samesite' => 'Lax'
+        'HttpOnly' => true,
+        'Secure' => false,
+        'SameSite' => 'Lax'
     ]);
 
     session_start();

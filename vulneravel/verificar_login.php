@@ -25,5 +25,5 @@ $_SESSION['nome'] = $usuario['nome'];
 $_SESSION['email'] = $usuario['email'];
 $_SESSION['tipo'] = $usuario['tipo'];
 
-header("Location: enquetes.php");
+header("Location: index.php");
 ?>

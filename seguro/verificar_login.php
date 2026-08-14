@@ -4,7 +4,7 @@ session_start();
 include "./includes/csrf.php";
 include "../includes/conexao.php";
 include "./includes/rate_limit.php";
-include "/includes/security.php";
+include "./includes/security.php";
 
 
 verificarTentativasLogin();
