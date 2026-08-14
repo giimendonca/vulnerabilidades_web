@@ -25,6 +25,14 @@ $enquetes = $conexao->query("
                 <?= $enquete['titulo'] ?>
             </h3>
 
+             <?php if (!empty($enquete['imagem'])): ?>
+
+                    <img
+                        src="../assets/uploads/<?=  $enquete['imagem'] ?>"
+                        alt="Imagem da enquete">
+
+                <?php endif; ?>
+
             <p>
                 <?= $enquete['descricao'] ?>
             </p>
