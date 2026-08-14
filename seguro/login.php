@@ -1,7 +1,6 @@
 <?php
 
-session_start();
-
+include "includes/sessao.php";
 include "includes/csrf.php";
 include "../includes/header.php";
 include "includes/security.php";
