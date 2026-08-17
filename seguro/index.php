@@ -4,7 +4,7 @@ include "../includes/header.php";
 include "./includes/security.php";
 
 if(!isset($_SESSION['id'])){
-    die("Acesso negado.");
+    header("Location: login.php");
 }
 ?>
 

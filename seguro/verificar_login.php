@@ -45,6 +45,6 @@ $_SESSION['nome'] = $usuario['nome'];
 $_SESSION['email'] = $usuario['email'];
 $_SESSION['tipo'] = $usuario['tipo'];
 
-header("Location: index.php");
+header("Location: login.php");
 exit();
 ?>
